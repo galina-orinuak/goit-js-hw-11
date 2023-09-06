@@ -1,9 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-.unvisible {
-    display: none;
-    
-  } 
+
 
 .header {
   background-color: rgb(154, 223, 111);
@@ -79,6 +76,15 @@
   align-items: center;
 }
 
+.photo-link {
+    text-decoration: none;
+}
+
+
+
+
+
+
  .load-more-button {
   display: flex;
   height: 60px;
@@ -93,4 +99,9 @@
   font-size: 22px;
   
 } 
+
+.unvisible {
+    display: none;
+    
+  } 
 
