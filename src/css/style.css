@@ -85,8 +85,11 @@
   font-family: cursive;
   margin: auto;
   margin-bottom: 10px;
+  font-size: 22px;
+  
 }
 
-.unvisible {
+
+/* .unvisible {
   display: none;
-}
+} */
