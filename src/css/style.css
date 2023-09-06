@@ -1,5 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+
+
 .header {
   background-color: rgb(154, 223, 111);
   display: flex;
@@ -74,7 +76,7 @@
   align-items: center;
 }
 
-.load-more-button {
+ .load-more-button {
   display: flex;
   height: 60px;
   border-radius: 30px;
@@ -87,9 +89,9 @@
   margin-bottom: 10px;
   font-size: 22px;
   
-}
+} 
 
-
-/* .unvisible {
-  display: none;
-} */
+.unvisible {
+    display: none;
+    
+  } 
