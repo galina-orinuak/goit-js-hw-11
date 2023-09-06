@@ -1,6 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
+.unvisible {
+    display: none;
+    
+  } 
 
 .header {
   background-color: rgb(154, 223, 111);
@@ -91,7 +94,3 @@
   
 } 
 
-.unvisible {
-    display: none;
-    
-  } 
