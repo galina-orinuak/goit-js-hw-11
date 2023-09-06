@@ -33,7 +33,7 @@ function handlerSubmit(evt) {
   queryToFetch = query;
   gallery.innerHTML = '';
   pageToFetch = 1;
-  loadMoreBtn.classList.add('unvisible');
+  loadMoreBtn.classList.remove('unvisible');
   getImages(queryToFetch, pageToFetch);
   searchForm.reset();
 }
