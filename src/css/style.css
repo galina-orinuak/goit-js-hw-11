@@ -29,6 +29,7 @@
 }
 
 .search-button {
+
   border: none;
   outline: none;
   display: flex;
@@ -38,6 +39,7 @@
   background-color: white;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .gallery {
@@ -80,12 +82,7 @@
     text-decoration: none;
 }
 
-
-
-
-
-
- .load-more-button {
+.load-more-button{
   display: flex;
   height: 60px;
   border-radius: 30px;
@@ -97,11 +94,9 @@
   margin: auto;
   margin-bottom: 10px;
   font-size: 22px;
-  
+  cursor: pointer;
 } 
 
-.unvisible {
-    display: none;
-    
-  } 
-
+.hidden {
+    display: none; }
+       
