@@ -51,12 +51,12 @@ const getImages = async (query, pageToFetch) => {
     lightbox.refresh();
 
     if (pageToFetch === 1) {
-      loadMoreBtn.classList.remove('hidden');
+      
       Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
     }
 
     if (data.totalHits >= pageToFetch * pageLimit) {
-      
+      loadMoreBtn.classList.remove('hidden');
     }
 
     if (data.totalHits <= pageToFetch * pageLimit) {
