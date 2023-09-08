@@ -33,7 +33,7 @@ function handlerSubmit(evt) {
   queryToFetch = query;
   gallery.innerHTML = '';
   pageToFetch = 1;
-  loadMoreBtn.classList.remove('unvisible');
+  loadMoreBtn.classList.add('hidden');
   getImages(queryToFetch, pageToFetch);
   searchForm.reset();
 }
@@ -51,11 +51,12 @@ const getImages = async (query, pageToFetch) => {
     lightbox.refresh();
 
     if (pageToFetch === 1) {
+      loadMoreBtn.classList.remove('hidden');
       Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
     }
 
     if (data.totalHits >= pageToFetch * pageLimit) {
-      loadMoreBtn.classList.remove('unvisible');
+      
     }
 
     if (data.totalHits <= pageToFetch * pageLimit) {
@@ -108,7 +109,7 @@ const renderImages = data => {
 
 
 function loadMoreClick(){
-  loadMoreBtn.classList.add('unvisible');
+  loadMoreBtn.classList.add('hidden');
   pageToFetch += 1;
   getImages(queryToFetch, pageToFetch);
 }
