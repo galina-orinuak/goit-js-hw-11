@@ -4,7 +4,7 @@ import axios from 'axios';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import { fetchImages } from './fetchImg';
+import { fetchImages, pageLimit } from './fetchImg';
 
 const searchForm = document.querySelector('.search-form');
 const loadMoreBtn = document.querySelector('.load-more-button');
@@ -21,7 +21,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
 
 let queryToFetch = '';
 let pageToFetch;
-
 
 function handlerSubmit(evt) {
   evt.preventDefault();
