@@ -24,4 +24,4 @@ const fetchImages = async (queryToFetch, pageToFetch) => {
     
     
     
-    export { fetchImages };    
+    export { fetchImages, pageLimit };    
